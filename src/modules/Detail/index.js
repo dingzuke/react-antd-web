@@ -8,9 +8,10 @@ class Detail extends Component {
 	}
 
 	render() {
+		let times = new Date();
 		return (
 		<div className={css.login}>
-			详情页面
+			当前时间：{times.getMinutes()}
 		</div>
 		);
 	}
