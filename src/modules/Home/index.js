@@ -16,13 +16,17 @@ class App extends Component {
 	render() {
 		return (
 			<div className={css.modle}>
-				<Button type="primary" onClick={() => this.goLogin()}>跳转登录</Button>
+				<Button type="primary" onClick={() => this.goLogin()}>跳转登录</Button> 
+				<Button type="primary" onClick={() => this.goDetail()}>跳转详情页</Button>
 			</div>
 		);
 	}
 
 	goLogin = () => {
 		history.push('/login', { some: 'state' });
+	}
+	goDetail = () => {
+		history.push('/detail', { some: 'state' });
 	}
 
 }

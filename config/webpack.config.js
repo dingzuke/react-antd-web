@@ -614,7 +614,7 @@ module.exports = function (webpackEnv) {
 				formatter: typescriptFormatter,
 			}),
 			new PrerenderSPAPlugin({
-				routes: ['/','/home'],
+				routes: ['/','/home','/detail'],
 				staticDir: paths.appBuild,
 			}),
 		].filter(Boolean),
