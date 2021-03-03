@@ -22,6 +22,7 @@ class App extends Component {
               <Switch>
                   <Route path="/home" component={modules.Home} />
                   <Route path="/login" component={modules.Login} />
+                  <Route path="/detail" component={modules.Detail} />
                   <Redirect path="/" to={{ pathname: '/home' }} />
               </Switch>
           </Router>
