@@ -18,7 +18,7 @@ class App extends Component {
 		setTimeout(() => {
 			let num = Math.ceil(Math.random() * 10);
 			this.setState({ data: num });
-		}, 100);
+		}, 1000);
 	}
 	render() {
 		return (
