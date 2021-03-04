@@ -10,7 +10,7 @@ class App extends Component {
 			selectedTab: 'blueTab',
 			hidden: false,
 			fullScreen: false,
-			data: '初始中',
+			data: undefined,
 		};
 	}
 	componentDidMount() {
@@ -18,7 +18,7 @@ class App extends Component {
 		setTimeout(() => {
 			let num = Math.ceil(Math.random() * 10);
 			this.setState({ data: num });
-		}, 1000);
+		}, 100);
 	}
 	render() {
 		return (
